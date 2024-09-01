@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Page</title>
+    <link rel="stylesheet" href="navbarstyle.css"> <!-- Link to navbar CSS -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="displaycontent.php">Display</a></li>
+            <li><a href="upload.php">Upload</a></li>
+            <li><a href="ud.php">Update/Delete</a></li> <!-- New Update/Delete link -->
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript to toggle the dropdown menu on smaller screens
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

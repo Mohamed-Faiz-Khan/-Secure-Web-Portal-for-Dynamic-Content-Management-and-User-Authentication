@@ -1,0 +1,288 @@
+/* style.css */
+/* 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.center {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.textfield {
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.textfield:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+    outline: none;
+}
+
+.btn {
+    height: 40px;
+    border: none;
+    background: #4facfe;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #00f2fe;
+}
+
+.signup {
+    margin-top: 20px;
+}
+
+.link {
+    color: #4facfe;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #00f2fe;
+}
+
+@media (max-width: 480px) {
+    .center {
+        padding: 20px;
+    }
+    .textfield {
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* signinstyle.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.center {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+.textfield-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.textfield {
+    height: 40px;
+    width: 96%;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.textfield:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+    outline: none;
+}
+
+.tooltip-icon {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4facfe;
+    cursor: pointer;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #4facfe;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; /* Place it above the icon */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-icon:hover + .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn {
+    height: 40px;
+    border: none;
+    background: #4facfe;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #00f2fe;
+}
+
+.login {
+    margin-top: 20px;
+}
+
+.link {
+    color: #4facfe;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #00f2fe;
+}
+
+@media (max-width: 480px) {
+    .center {
+        padding: 20px;
+    }
+    .textfield {
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

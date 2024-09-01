@@ -1,0 +1,109 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+/* Centered Container Styling */
+.center {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text Field Styling */
+.textfield {
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Text Field Focus Styling */
+.textfield:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+    outline: none;
+}
+
+/* Forgot Password Link Container Styling */
+.forgotpass {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Link Styling */
+.link {
+    color: #4facfe;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #00f2fe;
+}
+
+/* Button Styling */
+.btn {
+    height: 40px;
+    border: none;
+    background: #4facfe;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #00f2fe;
+}
+
+/* Signup Link Container Styling */
+.signup {
+    margin-top: 20px;
+}
+
+/* Responsive Styling for Screens up to 480px */
+@media (max-width: 480px) {
+    .center {
+        padding: 20px;
+    }
+
+    .textfield {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

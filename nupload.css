@@ -1,0 +1,106 @@
+/* uploadstyle.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient background */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff; /* White background for the form */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Space between navbar and form */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input_field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.textfield, .textarea {
+    width: 95%; /* Maintain the same width for all input fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.textfield:focus, .textarea:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+    outline: none;
+}
+
+.textarea {
+    height: 100px; /* Set a fixed height for the textarea */
+}
+
+.btn {
+    height: 40px;
+    width: 100%;
+    border: none;
+    background: #4facfe;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #00f2fe;
+}
+
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Make container wider on smaller screens */
+        padding: 30px; /* Adjust padding */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller font size for heading */
+    }
+
+    .textfield, .textarea, .btn {
+        font-size: 14px; /* Smaller font size for inputs and buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Adjust padding for even smaller screens */
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller font size for heading */
+    }
+
+    .textfield, .textarea, .btn {
+        font-size: 12px; /* Even smaller font size for inputs and buttons */
+    }
+}

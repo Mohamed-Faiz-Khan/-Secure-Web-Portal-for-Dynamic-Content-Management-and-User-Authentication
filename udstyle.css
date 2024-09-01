@@ -1,0 +1,109 @@
+/* General Body Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    height: auto; /* Adjust to fit content */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient background */
+}
+
+/* Container Styles */
+.container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    background: #fff; /* White background for the content */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow-x: auto; /* Allows horizontal scrolling for small screens */
+}
+
+/* Heading Styles */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4facfe; /* Background color for table headers */
+    color: white; /* Text color for table headers */
+}
+
+td img {
+    max-width: 100px; /* Set a max width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Change row color on hover */
+}
+
+.no-records {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Button Styles */
+.btn-update, .btn-delete {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-update {
+    background-color: #28a745; /* Green for Update */
+}
+
+.btn-update:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Red for Delete */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    h1 {
+        font-size: 20px; /* Smaller font size for heading */
+    }
+    th, td {
+        padding: 10px;
+        font-size: 14px; /* Smaller font size for table cells */
+    }
+    .btn-update, .btn-delete {
+        padding: 6px 10px;
+        font-size: 12px; /* Smaller button size */
+    }
+}
